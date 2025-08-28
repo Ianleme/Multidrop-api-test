@@ -73,7 +73,7 @@ export default class SessionService {
             checkoutStatus: {
                 ...foundSession.checkoutStatus,
                 status:
-                    status === "succeeded" ? "concluded" : status === "processing" ? "processing" : "requires_payment",
+                    status === "succeeded" ? "concluded" : status === "processing" ? "processing" : foundSession.checkoutStatus.status,
             },
         };
 
