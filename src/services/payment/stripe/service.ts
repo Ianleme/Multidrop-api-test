@@ -123,7 +123,7 @@ export default class StripeService {
                 customer: customerId,
                 items: [
                     {
-                        price: "price_1RzkEiKzF10uREG3MlA4Acav",
+                        price: product.priceStripeID,
                     },
                 ],
                 collection_method: "charge_automatically",
